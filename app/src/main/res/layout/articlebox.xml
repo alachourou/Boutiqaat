@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border"
+    android:layout_margin="5dp"
+    >
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/w1"
+            android:id="@+id/articleImage"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:layout_marginStart="10dp"
+            android:id="@+id/articleTitle"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Category"
+                android:layout_marginStart="10dp"
+                android:id="@+id/articleCategory"
+                android:textSize="13sp"
+                android:textColor="#000"
+                android:ellipsize="end"
+                android:singleLine="true"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="143.00 SAR"
+                android:gravity="bottom"
+                android:layout_marginStart="10dp"
+                android:id="@+id/articlePrice"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="#000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.5"
+                    android:background="#000"
+                    android:text="Buy Now"
+                    android:textColor="#fff"
+                    android:id="@+id/buyButton"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#716E6E"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    android:textColor="#fff"
+                    android:id="@+id/loveButton"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+</LinearLayout>

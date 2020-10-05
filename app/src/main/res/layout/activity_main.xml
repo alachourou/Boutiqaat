@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <include
+            layout="@layout/toolbar"
+    />
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/tabLayout">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Women"
+            android:id="@+id/women" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Men"
+            android:id="@+id/men" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/image_slider"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:iss_auto_cycle="true"
+        app:iss_period="1000"
+        app:iss_delay="0"/>
+
+
+    <com.formalab.boutiqaat.NoSwipeViewpager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPage" />
+
+</LinearLayout>

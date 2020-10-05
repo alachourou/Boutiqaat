@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/drawerMenu"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_menu_24" />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:src="@drawable/boutiquaat"
+        android:layout_weight="4"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/favorite"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_favorite_border_24" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:id="@+id/search"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_search_24" />
+</LinearLayout>
